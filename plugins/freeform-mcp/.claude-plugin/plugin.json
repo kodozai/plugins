@@ -18,10 +18,53 @@
     "flowchart",
     "mindmap"
   ],
+  "requirements": {
+    "os": "macos",
+    "python": ">=3.10",
+    "install": "pip3 install -r requirements.txt"
+  },
   "mcpServers": {
     "freeform": {
       "command": "python3",
-      "args": ["${CLAUDE_PLUGIN_ROOT}/freeform_mcp_server.py"]
+      "args": ["${PLUGIN_ROOT}/freeform_mcp_server.py"]
+    }
+  },
+  "clients": {
+    "claude": {
+      "configKey": "mcpServers",
+      "server": {
+        "freeform": {
+          "command": "python3",
+          "args": ["${PLUGIN_ROOT}/freeform_mcp_server.py"]
+        }
+      }
+    },
+    "antigravity": {
+      "configFile": "~/.gemini/config/mcp_config.json",
+      "configKey": "mcpServers",
+      "server": {
+        "freeform-mcp": {
+          "command": "python3",
+          "args": ["${PLUGIN_ROOT}/freeform_mcp_server.py"]
+        }
+      }
+    },
+    "opencode": {
+      "configFile": "~/.config/opencode/opencode.jsonc",
+      "configKey": "mcp",
+      "server": {
+        "Freeform": {
+          "type": "local",
+          "command": ["python3", "${PLUGIN_ROOT}/freeform_mcp_server.py"]
+        }
+      }
+    },
+    "codex": {
+      "pluginDir": "~/.codex/plugins/freeform-mcp",
+      "files": {
+        ".codex-plugin/plugin.json": "Codex plugin manifest",
+        ".mcp.json": "MCP server config for Codex"
+      }
     }
   }
 }
