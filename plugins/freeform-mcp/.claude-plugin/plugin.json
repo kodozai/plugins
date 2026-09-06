@@ -1,0 +1,27 @@
+{
+  "name": "freeform-mcp",
+  "version": "1.0.0",
+  "description": "Apple Freeform bağlantısı: Claude'un diyagram, akış şeması ve zihin haritası çizmesi ile mevcut panoları okuması için MCP sunucusu (macOS).",
+  "author": {
+    "name": "Chris van Wyk",
+    "url": "https://github.com/ChrisvW56"
+  },
+  "homepage": "https://github.com/ChrisvW56/freeform-mcp",
+  "repository": "https://github.com/ChrisvW56/freeform-mcp",
+  "license": "MIT",
+  "keywords": [
+    "freeform",
+    "diagrams",
+    "whiteboard",
+    "macos",
+    "mcp",
+    "flowchart",
+    "mindmap"
+  ],
+  "mcpServers": {
+    "freeform": {
+      "command": "python3",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/freeform_mcp_server.py"]
+    }
+  }
+}
