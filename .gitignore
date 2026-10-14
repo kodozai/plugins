@@ -1,0 +1,7 @@
+# macOS system files
+.DS_Store
+
+# Python bytecode files
+__pycache__/
+*.pyc
+.git2/
