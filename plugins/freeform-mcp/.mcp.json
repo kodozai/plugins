@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "freeform": {
+      "type": "local",
+      "command": "/usr/local/bin/python3",
+      "args": [
+        "/Users/macpro/.codex/plugins/freeform-mcp/freeform_mcp_server.py"
+      ]
+    }
+  }
+}

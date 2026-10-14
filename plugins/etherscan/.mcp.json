@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "etherscan": {
+      "type": "http",
+      "url": "https://mcp.etherscan.io/mcp",
+      "bearer_token_env_var": "ETHERSCAN_API_KEY",
+      "headers": {
+        "Authorization": "Bearer Q3SKU8EHCP3Q8JKUCE38FXCGHGXEX55XA3"
+      }
+    }
+  }
+}

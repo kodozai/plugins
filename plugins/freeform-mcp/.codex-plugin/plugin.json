@@ -1,0 +1,41 @@
+{
+  "name": "freeform-mcp",
+  "version": "1.0.0",
+  "description": "Apple Freeform bağlantısı: Claude'un diyagram, akış şeması ve zihin haritası çizmesi ile mevcut panoları okuması için MCP sunucusu (macOS).",
+  "author": {
+    "name": "Chris van Wyk",
+    "url": "https://github.com/ChrisvW56"
+  },
+  "homepage": "https://github.com/ChrisvW56/freeform-mcp",
+  "license": "MIT",
+  "keywords": [
+    "freeform",
+    "diagrams",
+    "whiteboard",
+    "macos",
+    "mcp",
+    "flowchart",
+    "mindmap"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Apple Freeform",
+    "shortDescription": "Draw diagrams and mind maps in Apple Freeform.",
+    "longDescription": "Connect Codex to Apple Freeform so it can draw flowcharts, mind maps, and diagrams — and read boards you have already created. macOS only.",
+    "developerName": "Chris van Wyk",
+    "category": "Productivity",
+    "capabilities": [
+      "Draw shapes, connectors, sticky notes",
+      "Read existing Freeform boards",
+      "Create flowcharts and mind maps"
+    ],
+    "websiteURL": "https://github.com/ChrisvW56/freeform-mcp",
+    "defaultPrompt": [
+      "Draw me a flowchart of my software architecture in Freeform.",
+      "Create a mind map of my project plan in Freeform.",
+      "Read my current Freeform board and describe it."
+    ],
+    "brandColor": "#0071E3"
+  },
+  "mcpServers": "./.mcp.json"
+}

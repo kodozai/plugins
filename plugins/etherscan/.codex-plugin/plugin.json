@@ -1,0 +1,38 @@
+{
+  "name": "etherscan",
+  "version": "0.1.0",
+  "description": "Connect Codex to Etherscan blockchain data through the official MCP server.",
+  "author": {
+    "name": "Etherscan"
+  },
+  "homepage": "https://etherscan.io",
+  "keywords": [
+    "etherscan",
+    "ethereum",
+    "blockchain",
+    "mcp",
+    "web3"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Etherscan",
+    "shortDescription": "Query blockchain data with Etherscan.",
+    "longDescription": "Use Etherscan's official MCP server from Codex to look up addresses, transactions, tokens, contracts, gas, and supported-chain data.",
+    "developerName": "Etherscan",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Blockchain data lookup",
+      "Multi-chain queries"
+    ],
+    "websiteURL": "https://etherscan.io",
+    "defaultPrompt": [
+      "Look up this Ethereum address on Etherscan.",
+      "Explain this transaction using Etherscan data.",
+      "Find the current gas information for Ethereum."
+    ],
+    "brandColor": "#21325B",
+    "composerIcon": "./assets/eth.png",
+    "logo": "./assets/eth.png"
+  },
+  "mcpServers": "./.mcp.json"
+}
